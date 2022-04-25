@@ -1,12 +1,12 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# HTML CSS SASS JavaSript template project
+# Awsome Books
 
 > This is a portifolio project that was implemented from the figma design
 
 # Link to live project
 
-## [Pascal portifolio](https://bizip.github.io/p-portifolio/)
+## [Awsome Book](https://bizip.github.io/p-portifolio/)
 
 ## Built With
 
@@ -26,7 +26,7 @@ You need to have a basic knowledge about HTML and CSS
 
 ### Setup
 
-#### clone this project (using git clone https://github.com/bizip/hello-world.git) to your local computer and use telminal to navigate into the parent directory of this project.
+#### clone this project (using git clone https://github.com/bizip/awesome-books) to your local computer and use telminal to navigate into the parent directory of this project.
 
 ### Install
 
