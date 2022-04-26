@@ -1,3 +1,16 @@
+class  book {
+  constructor(titlle, author) {
+    this.tittle = titlle;
+    this.author = author;
+  }
+
+  newBook(tittle, author) { 
+    /*submitHandler();*/
+    console.log('tittle', 'author');
+  }
+}
+
+
 const library = [];
 
 const submitHandler = (e) => {
