@@ -8,8 +8,8 @@ class Book {
         bookList.innerHTML += this.bookStore.map((el) => ` <div>
                  <h4>${el.title}</h4>
             <p>${el.author}</p>
-             <button type="button" data-id=${el.id} class="remove-button">Remove</button>
-             </div>`);
+          <button type="button" data-id=${el.id} class="remove-button">Remove</button>
+          </div>`);
     }
     addNewBook(title, author) {
         const id = this.bookStore.length + 1;
@@ -23,13 +23,33 @@ class Book {
         this.getBookList()
     }
 
+    deleteBook(el) {
+        if (this.el.classList.contains('remove-button')) {
+            this.el.parentElement.parentElement.remove()
+        }
+    }
+
+   
+
+   
+
+    /*static removeBookFromList = () => {
+        document.addEventListener('click', (e) => {
+           if (e.target.classlist.contains('remove')) {
+               const ide = parseInt(e.target.dataset.id, 10);
+               const bks = this.bookStore.splice(id, 1);
+               bookStore = bks;
+           }
+        });
+    }*/
 
 
-    removeBookFromList(index) {
+
+    /*removeBookFromList(index) {
 
         localStorage.setItem('singleBook', JSON.stringify(this.bookStore.splice(index, 1)));
         this.getBookList()
-    }
+    }*/
 }
 
 const booksLibrary = new Book();
@@ -47,13 +67,24 @@ window.onload = () => {
     removeBtn.forEach((el) => {
 
         el.addEventListener('click', (e) => {
-            e.stopPropagation();
+            /*e.stopPropagation();*/
             console.log(e.target.dataset.id);
-            booksLibrary.removeBookFromList(e.target.dataset.id);
+    
 
+           // const newStore = booksLibrary.removeBookFromList(e.target.dataset.id);
+            //bookStore = newStore;
+            //this.bookList(newStore);
+            //title.value = '';
+           // author.value = ''; 
         });
     });
+
+   
 }
+
+document.getElementById('bookList').addEventListener('click', (e) => {
+    deleteBook(e.target.dataset.id);
+  });
 
 
 

@@ -1,3 +1,72 @@
 * {
-  margin: 2px;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@media screen and (min-width: 500px) {
+  
+  div {
+    width: 98vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  #book-list {
+    border: 2px solid black;
+    display: inline-flex;
+    flex-direction: column;
+    padding: 1% 5%;
+    margin: 1%;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  h1 {
+    padding: 2% 25%;
+  }
+
+  h2 {
+    padding: 2% 25%;
+  }
+
+  form #title {
+    width: 300px;
+    height: 30px;
+    justify-content: center;
+    padding: 2%;
+    margin: 10px 5%;
+  }
+
+  form #author {
+    width: 300px;
+    height: 30px;
+    padding: 2%;
+    margin: 0 5%;
+  }
+
+  hr {
+    border: 2px solid black;
+    width: 90px;
+    margin-left: 40%;
+    margin-top: 5%;
+    background-color: black;
+  }
+
+  #btn {
+    width: 80px;
+    height: 20px;
+    margin-left: 53%;
+    box-shadow: 3px 5px 5px black;
+  }
+
+  .remove-button {
+    box-shadow: 3px 5px 5px black;
+  }
+
 }
