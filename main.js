@@ -4,6 +4,7 @@ class Book {
   }
   getBookList() {
     const bookList = document.getElementById('book-list');
+    
     bookList.innerHTML = ``;
     bookList.innerHTML += this.bookStore.map(
       (el) => ` <div>
@@ -31,7 +32,7 @@ class Book {
     localStorage.setItem('singleBook', JSON.stringify(this.bookStore));
     this.getBookList();
   }
-    
+  
   deleteBook(id) {
     this.bookStore = this.bookStore.filter((item) => {
       if (item.id === Number(id)) {
