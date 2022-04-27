@@ -5,7 +5,7 @@ class Book {
 
   getBookList() {
     const bookList = document.getElementById('book-list');
-    bookList.innerHTML = ``;
+    bookList.innerHTML = '';
     bookList.innerHTML += this.bookStore.map(
       (el) => ` <div>
             <h4>${el.title}</h4>
