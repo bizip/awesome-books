@@ -1,20 +1,20 @@
 class Book {
     constructor() {
-      this.bookStore = JSON.parse(localStorage.getItem("singleBook")) || [];
+      this.bookStore = JSON.parse(localStorage.getItem('singleBook')) || [];
     }
     getBookList() {
-      const bookList = document.getElementById("book-list");
+      const bookList = document.getElementById('book-list');
       bookList.innerHTML = ``;
       bookList.innerHTML += this.bookStore.map(
         (el) => ` <div>
                    <h4>${el.title}</h4>
               <p>${el.author}</p>
-            <button type="button" id=${el.id} class="remove-button">Remove</button>
+            <button type="button" id=${el.id} class='remove-button'>Remove</button>
             </div>`
       );
-      const Allbtn = document.querySelectorAll(".remove-button");
+      const Allbtn = document.querySelectorAll('.remove-button');
       Allbtn.forEach((btn) => {
-        btn.addEventListener("click", () => {
+        btn.addEventListener('click', () => {
           this.deleteBook(btn.id);
         });
       });
@@ -27,7 +27,7 @@ class Book {
         id,
       };
       this.bookStore.push(addbook);
-      localStorage.setItem("singleBook", JSON.stringify(this.bookStore));
+      localStorage.setItem('singleBook', JSON.stringify(this.bookStore));
       this.getBookList();
     }
   
@@ -38,11 +38,10 @@ class Book {
         }
         return true;
       });
-      localStorage.setItem("singleBook", JSON.stringify(this.bookStore));
+      localStorage.setItem('singleBook', JSON.stringify(this.bookStore));
       this.getBookList();
     }
-  
-  }
+}
   
   const booksLibrary = new Book();
   booksLibrary.getBookList();
@@ -53,24 +52,4 @@ class Book {
     const getAuthor = document.getElementById("author").value;
     console.log(getTitle, getAuthor);
     booksLibrary.addNewBook(getTitle, getAuthor);
-  });
-
-
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-
-
-
+  });  
