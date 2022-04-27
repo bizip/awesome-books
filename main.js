@@ -2,16 +2,16 @@ class Book {
   constructor() {
     this.bookStore = JSON.parse(localStorage.getItem('singleBook')) || [];
   }
+  
   getBookList() {
     const bookList = document.getElementById('book-list');
-    
     bookList.innerHTML = ``;
     bookList.innerHTML += this.bookStore.map(
       (el) => ` <div>
             <h4>${el.title}</h4>
             <p>${el.author}</p>
             <button type="button" id=${el.id} class='remove-button'>Remove</button>
-            </div>`
+            </div>`,
     );
     const Allbtn = document.querySelectorAll('.remove-button');
     Allbtn.forEach((btn) => {
@@ -52,6 +52,5 @@ formData.addEventListener('submit', (e) => {
   e.preventDefault();
   const getTitle = document.getElementById('title').value;
   const getAuthor = document.getElementById('author').value;
-  console.log(getTitle, getAuthor);
   booksLibrary.addNewBook(getTitle, getAuthor);
 });
