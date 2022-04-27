@@ -54,7 +54,7 @@ class Book {
     console.log(getTitle, getAuthor);
     booksLibrary.addNewBook(getTitle, getAuthor);
   });
-  
+
 
   
   
