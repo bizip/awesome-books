@@ -24,8 +24,8 @@ class Book {
   addNewBook(title, author) {
     const id = this.bookStore.length + 1;
     const addbook = {
-      title: title,
-      author: author,
+      title: 'title',
+      author: 'autho'r,
       id,
     };
     this.bookStore.push(addbook); localStorage.setItem('singleBook', JSON.stringify(this.bookStore));
