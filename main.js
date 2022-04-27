@@ -23,14 +23,13 @@ class Book {
   addNewBook(title, author) {
     const id = this.bookStore.length + 1;
     const addbook = {
-      title: title,
-      author: author,
-      id,
+      title: title, author: author, id,
     };
     this.bookStore.push(addbook);
     localStorage.setItem('singleBook', JSON.stringify(this.bookStore));
     this.getBookList();
   }
+
   deleteBook(id) {
     this.bookStore = this.bookStore.filter((item) => {
       if (item.id === Number(id)) {
