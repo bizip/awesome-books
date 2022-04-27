@@ -2,6 +2,7 @@ class Book {
   constructor() {
     this.bookStore = JSON.parse(localStorage.getItem('singleBook')) || [];
   }
+  
   getBookList() {
     const bookList = document.getElementById('book-list');
     bookList.innerHTML = ` `;
@@ -23,8 +24,11 @@ class Book {
   addNewBook(title, author) {
     const id = this.bookStore.length + 1;
     const addbook = {
-      title: title, author: author, id,
+        title: title,
+        author: author,
+        id,
     };
+    
     this.bookStore.push(addbook);
     localStorage.setItem('singleBook', JSON.stringify(this.bookStore));
     this.getBookList();
