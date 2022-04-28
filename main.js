@@ -7,7 +7,7 @@ class Book {
     const bookList = document.getElementById('book-list');
     bookList.innerHTML = '';
     bookList.innerHTML += this.bookStore.map(
-      (el, index) => ` <div class="${index % 2 === 0 ? "dark" : 'mediumdark'}">
+      (el, index) => ` <div class="${index % 2 === 0 ? 'dark' : 'mediumdark'}">
         <h4>${el.title}</h4>
         <p>${el.author}</p>
         <button type="button" id=${el.id} class='remove-button'>Remove</button>
@@ -37,7 +37,7 @@ class Book {
       if (item.id === Number(id)) {
         return false;
       }
-        return true;
+      return true;
     });
     localStorage.setItem('singleBook', JSON.stringify(this.bookStore));
     this.getBookList();
@@ -55,7 +55,7 @@ formData.addEventListener('submit', (e) => {
 });
 
 let CurrentDate = document.getElementById('currentDate');
-currentDate.innerHTML = new Date();
+CurrentDate.innerHTML = new Date();
 
 const listLink = document.getElementById('list-link');
 const addLink = document.getElementById('add-link');
