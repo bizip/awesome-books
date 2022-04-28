@@ -128,7 +128,7 @@ form button {
 }
 
 footer {
-  width: 100%;
+  width: 96%;
   height: 3rem;
   display: flex;
   position: fixed;
@@ -139,10 +139,11 @@ footer {
   bottom: 0;
   z-index: 1;
   margin-bottom: 5px;
+  background-color: #fff;
 }
 
 .contact {
   height: 90vh;
   width: 100%;
-  margin-bottom: 5px;
+  margin-bottom: 25px;
 }
