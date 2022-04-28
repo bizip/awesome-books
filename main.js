@@ -54,9 +54,6 @@ formData.addEventListener('submit', (e) => {
   booksLibrary.addNewBook(getTitle, getAuthor);
 });
 
-let CurrentDate = document.getElementById('currentDate');
-CurrentDate.innerHTML = new Date();
-
 const listLink = document.getElementById('list-link');
 const addLink = document.getElementById('add-link');
 const contactLink = document.getElementById('contact-link');
