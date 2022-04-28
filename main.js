@@ -79,7 +79,7 @@ contactLink.addEventListener('click', () => {
   contactDisplay.style.display = 'flex';
 });
 
-window.onload = removeParts () {
+window.onload = function () { 
   document.querySelector('.ADD').style.display = 'none';
   document.querySelector('.contact').style.display = 'none';
 };
