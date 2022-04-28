@@ -3,128 +3,147 @@
   margin: 0;
   box-sizing: border-box;
 }
-html{
-    font-size: 100%;
+
+html {
+  font-size: 100%;
 }
+
 body{
-    padding:0 2% ;
+  padding:0 2% ;
 }
-nav{
-    display: flex;
-    justify-content: space-between;
-    padding:1rem 5%;
-    border: 2px solid black;
-    margin-top: 5px;
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding:1rem 5%;
+  border: 2px solid black;
+  margin-top: 5px;
 }
-nav ul{
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-    align-items: center;
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  align-items: center;
 }
-nav ul li{
-    padding: 0 1rem;
+
+nav ul li {
+  padding: 0 1rem;
 }
-nav ul li a{
-    text-decoration: none;
-    color: black;
-    font-weight: 500;
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
 }
+
 nav ul li a:hover{
-    color: rgb(17, 193, 233);
+  color: rgb(17, 193, 233);
 }
+
 .date{
-padding: 0;
-display: flex;
-justify-content: right;
-width: 100%;
-padding:1rem 15%;
+  padding: 0;
+  display: flex;
+  justify-content: right;
+  width: 100%;
+  padding:1rem 15%;
 }
+
 div.date p{
-    font-size: .8rem;
+  font-size: .8rem;
   font-weight: bold;
 }
+
 h2{
-font-size: 1.2rem;
+  font-size: 1.2rem;
 }
+
 .all-books{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
 .dark{
-    background-color: grey;
+  background-color: grey;
 }
+
 .mediumdark{
-    background-color: rgb(245, 237, 237);
+  background-color: rgb(245, 237, 237);
 }
+
 #book-list {
-    width: 100%;
-    display: inline-flex;
-    flex-direction: column;
-    margin: 1%;
-    border: 2px solid black;
-  }
+  width: 100%;
+  display: inline-flex;
+  flex-direction: column;
+  margin: 1%;
+  border: 2px solid black;
+}
 
-  #book-list div{
-      display: flex;
-      flex-direction: row;
-      justify-content: space-around;
-      padding: 1rem;
-      margin: 0;
-  }
+#book-list div{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 1rem;
+  margin: 0;
+}
 
-  #btn {
-    width: 80px;
-    height: 20px;
-    box-shadow: 3px 5px 5px black;
-  }
+#btn {
+  width: 80px;
+  height: 20px;
+  box-shadow: 3px 5px 5px black;
+}
 
-  .remove-button {
-      padding:.2rem .5rem;
-    box-shadow: 3px 5px 5px black;
-    border: 2px solid black;
-  }
+.remove-button {
+  padding:.2rem .5rem;
+  box-shadow: 3px 5px 5px black;
+  border: 2px solid black;
+}
+
 section h1{
-    margin: 2rem;
+  margin: 2rem;
 }
+
 form{
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-  
+  width: 50%;
+  display: flex;
+  flex-direction: column;
 }
+
 form input{
-    width: 100%;
-    height:2rem;
-    border: 2px solid black;
-    padding: .5rem;
+  width: 100%;
+  height:2rem;
+  border: 2px solid black;
+  padding: .5rem;
 }
+
 form button{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding:15px 18px;
-    font-weight: bolder;
-    align-self:flex-end;
-    border: 2px solid black;
-    box-shadow: 3px 5px 5px black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding:15px 18px;
+  font-weight: bolder;
+  align-self:flex-end;
+  border: 2px solid black;
+  box-shadow: 3px 5px 5px black;
 }
+
 footer{
-    width: 100%;
-    height: 3rem;
-    display: flex;
-    position: fixed;
-    align-items: center;
-    margin-top: 3rem;
-    padding-left: 4%;
-    border: 2px solid black;
-    bottom: 0;
-    z-index: 1;
-    margin-bottom: 5px;
+  width: 100%;
+  height: 3rem;
+  display: flex;
+  position: fixed;
+  align-items: center;
+  margin-top: 3rem;
+  padding-left: 4%;
+  border: 2px solid black;
+  bottom: 0;
+  z-index: 1;
+  margin-bottom: 5px;
 }
+
 .contact{
-    height: 90vh;
-    width: 100%;
-    margin-bottom: 5px;
+  height: 90vh;
+  width: 100%;
+  margin-bottom: 5px;
 }
