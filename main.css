@@ -3,8 +3,74 @@
   margin: 0;
   box-sizing: border-box;
 }
+html{
+    font-size: 100%;
+}
+body{
+    padding:0 2% ;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding:1rem 5%;
+    border: 2px solid black;
+}
+nav ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    align-items: center;
+}
+nav ul li{
+    padding: 0 1rem;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+nav ul li a:hover{
+    color: rgb(17, 193, 233);
+}
+.date{
+padding: 0;
+display: flex;
+justify-content: right;
+width: 100%;
+padding:1rem 15%;
+}
+div.date p{
+    font-size: .8rem;
+  font-weight: bold;
+}
+h2{
+font-size: 1.2rem;
+}
+.all-books{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.dark{
+    background-color: grey;
+}
+#book-list {
+    border: 2px solid black;
+    width: 100%;
+    display: inline-flex;
+    flex-direction: column;
+    /* padding: 1% 1%; */
+    margin: 1%;
+  }
 
-@media screen and (min-width: 500px) {
+  #book-list div{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      padding: 1rem;
+      margin: 0;
+  }
+/* @media screen and (min-width: 500px) {
   div {
     width: 98vw;
     display: flex;
@@ -23,16 +89,16 @@
   form {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
   }
-
+/* 
   h1 {
     padding: 2% 25%;
   }
 
   h2 {
     padding: 2% 25%;
-  }
+  } */
 
   form #title {
     width: 300px;
@@ -61,11 +127,11 @@
   #btn {
     width: 80px;
     height: 20px;
-    margin-left: 68%;
+    /* margin-left: 68%; */
     box-shadow: 3px 5px 5px black;
   }
 
   .remove-button {
     box-shadow: 3px 5px 5px black;
   }
-}
+} */
