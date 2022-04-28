@@ -53,3 +53,7 @@ formData.addEventListener('submit', (e) => {
     const getAuthor = document.getElementById('author').value;
     booksLibrary.addNewBook(getTitle, getAuthor);
 });
+
+let currentDate = document.getElementById('currentDate');
+currentDate.innerHTML = new Date();
+
