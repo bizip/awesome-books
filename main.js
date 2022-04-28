@@ -7,7 +7,7 @@ class Book {
         const bookList = document.getElementById('book-list');
         bookList.innerHTML = '';
         bookList.innerHTML += this.bookStore.map(
-            (el, index) => ` <div class="${index % 2 === 0 ? "dark" : ''}">
+            (el, index) => ` <div class="${index % 2 === 0 ? "dark" : 'mediumdark'}">
             <h4>${el.title}</h4>
             <p>${el.author}</p>
             <button type="button" id=${el.id} class='remove-button'>Remove</button>
