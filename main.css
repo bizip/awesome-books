@@ -8,14 +8,14 @@ html {
   font-size: 100%;
 }
 
-body{
-  padding:0 2% ;
+body {
+  padding: 0 2% ;
 }
 
 nav {
   display: flex;
   justify-content: space-between;
-  padding:1rem 5%;
+  padding: 1rem 5%;
   border: 2px solid black;
   margin-top: 5px;
 }
@@ -37,11 +37,11 @@ nav ul li a {
   font-weight: 500;
 }
 
-nav ul li a:hover{
+nav ul li a:hover {
   color: rgb(17, 193, 233);
 }
 
-.date{
+.date {
   padding: 0;
   display: flex;
   justify-content: right;
@@ -49,26 +49,26 @@ nav ul li a:hover{
   padding:1rem 15%;
 }
 
-div.date p{
+div.date p {
   font-size: .8rem;
   font-weight: bold;
 }
 
-h2{
+h2 {
   font-size: 1.2rem;
 }
 
-.all-books{
+.all-books {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.dark{
+.dark {
   background-color: grey;
 }
 
-.mediumdark{
+.mediumdark {
   background-color: rgb(245, 237, 237);
 }
 
@@ -80,7 +80,7 @@ h2{
   border: 2px solid black;
 }
 
-#book-list div{
+#book-list div {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -95,40 +95,40 @@ h2{
 }
 
 .remove-button {
-  padding:.2rem .5rem;
+  padding: .2rem .5rem;
   box-shadow: 3px 5px 5px black;
   border: 2px solid black;
 }
 
-section h1{
+section h1 {
   margin: 2rem;
 }
 
-form{
+form {
   width: 50%;
   display: flex;
   flex-direction: column;
 }
 
-form input{
+form input {
   width: 100%;
-  height:2rem;
+  height: 2rem;
   border: 2px solid black;
-  padding: .5rem;
+  padding: 0.5rem;
 }
 
-form button{
+form button {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding:15px 18px;
+  padding: 15px 18px;
   font-weight: bolder;
-  align-self:flex-end;
+  align-self: flex-end;
   border: 2px solid black;
   box-shadow: 3px 5px 5px black;
 }
 
-footer{
+footer {
   width: 100%;
   height: 3rem;
   display: flex;
@@ -142,7 +142,7 @@ footer{
   margin-bottom: 5px;
 }
 
-.contact{
+.contact {
   height: 90vh;
   width: 100%;
   margin-bottom: 5px;
