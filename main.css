@@ -9,7 +9,7 @@ html {
 }
 
 body {
-  padding: 0 2% ;
+  padding: 0 2%;
 }
 
 nav {
@@ -42,15 +42,14 @@ nav ul li a:hover {
 }
 
 .date {
-  padding: 0;
   display: flex;
   justify-content: right;
   width: 100%;
-  padding:1rem 15%;
+  padding: 1rem 15%;
 }
 
 div.date p {
-  font-size: .8rem;
+  font-size: 0.8rem;
   font-weight: bold;
 }
 
@@ -95,7 +94,7 @@ h2 {
 }
 
 .remove-button {
-  padding: .2rem .5rem;
+  padding: 0.2rem 0.5rem;
   box-shadow: 3px 5px 5px black;
   border: 2px solid black;
 }
