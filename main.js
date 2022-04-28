@@ -57,3 +57,28 @@ formData.addEventListener('submit', (e) => {
 let currentDate = document.getElementById('currentDate');
 currentDate.innerHTML = new Date();
 
+const listLink = document.getElementById('list-link');
+const addLink = document.getElementById('add-link');
+const contactLink = document.getElementById('contact-link');
+const addDisplay = document.querySelector('.ADD');
+const listDisplay = document.querySelector('.LIST');
+const contactDisplay = document.querySelector('.contact');
+
+listLink.addEventListener('click', () => {
+    addDisplay.style.display = 'none';
+    contactDisplay.style.display = 'none';
+    listDisplay.style.display = 'flex';
+});
+
+addLink.addEventListener('click', () => {
+    listDisplay.style.display = 'none';
+    contactDisplay.style.display = 'none';
+    addDisplay.style.display = 'flex';
+});
+
+contactLink.addEventListener('click', () => {
+    listDisplay.style.display = 'none';
+    addDisplay.style.display = 'none';
+    contactDisplay.style.display = 'flex';
+});
+
