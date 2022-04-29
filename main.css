@@ -4,68 +4,146 @@
   box-sizing: border-box;
 }
 
-@media screen and (min-width: 500px) {
-  div {
-    width: 98vw;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-  }
+html {
+  font-size: 100%;
+}
 
-  #book-list {
-    border: 2px solid black;
-    display: inline-flex;
-    flex-direction: column;
-    padding: 1% 5%;
-    margin: 1%;
-  }
+body {
+  padding: 0 2%;
+}
 
-  form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 5%;
+  border: 2px solid black;
+  margin-top: 5px;
+}
 
-  h1 {
-    padding: 2% 25%;
-  }
+nav ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  align-items: center;
+}
 
-  h2 {
-    padding: 2% 25%;
-  }
+nav ul li {
+  padding: 0 1rem;
+}
 
-  form #title {
-    width: 300px;
-    height: 30px;
-    justify-content: center;
-    padding: 2%;
-    margin-top: 0;
-    margin-left: 25%;
-  }
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
 
-  form #author {
-    width: 300px;
-    height: 30px;
-    padding: 2%;
-    margin: 0 25%;
-  }
+nav ul li a:hover {
+  color: rgb(17, 193, 233);
+}
 
-  hr {
-    border: 2px solid black;
-    width: 90px;
-    margin-left: 40%;
-    margin-top: 5%;
-    background-color: black;
-  }
+.date {
+  display: flex;
+  justify-content: right;
+  width: 100%;
+  padding: 1rem 15%;
+}
 
-  #btn {
-    width: 80px;
-    height: 20px;
-    margin-left: 68%;
-    box-shadow: 3px 5px 5px black;
-  }
+div.date p {
+  font-size: 0.8rem;
+  font-weight: bold;
+}
 
-  .remove-button {
-    box-shadow: 3px 5px 5px black;
-  }
+h2 {
+  font-size: 1.2rem;
+}
+
+.all-books {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dark {
+  background-color: grey;
+}
+
+.mediumdark {
+  background-color: rgb(245, 237, 237);
+}
+
+#book-list {
+  width: 100%;
+  display: inline-flex;
+  flex-direction: column;
+  margin: 1%;
+  border: 2px solid black;
+}
+
+#book-list div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 1rem;
+  margin: 0;
+}
+
+#btn {
+  width: 80px;
+  height: 20px;
+  box-shadow: 3px 5px 5px black;
+}
+
+.remove-button {
+  padding: 0.2rem 0.5rem;
+  box-shadow: 3px 5px 5px black;
+  border: 2px solid black;
+}
+
+section h1 {
+  margin: 2rem;
+}
+
+form {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+form input {
+  width: 100%;
+  height: 2rem;
+  border: 2px solid black;
+  padding: 0.5rem;
+}
+
+form button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 18px;
+  font-weight: bolder;
+  align-self: flex-end;
+  border: 2px solid black;
+  box-shadow: 3px 5px 5px black;
+}
+
+footer {
+  width: 96%;
+  height: 3rem;
+  display: flex;
+  position: fixed;
+  align-items: center;
+  margin-top: 3rem;
+  padding-left: 4%;
+  border: 2px solid black;
+  bottom: 0;
+  z-index: 1;
+  margin-bottom: 5px;
+  background-color: #fff;
+}
+
+.contact {
+  height: 90vh;
+  width: 100%;
+  margin-bottom: 25px;
 }

@@ -7,11 +7,11 @@ class Book {
     const bookList = document.getElementById('book-list');
     bookList.innerHTML = '';
     bookList.innerHTML += this.bookStore.map(
-      (el) => ` <div>
-            <h4>${el.title}</h4>
-            <p>${el.author}</p>
-            <button type="button" id=${el.id} class='remove-button'>Remove</button>
-            </div>`,
+      (el, index) => ` <div class="${index % 2 === 0 ? 'dark' : 'mediumdark'}">
+        <h4>${el.title}</h4>
+        <p>${el.author}</p>
+        <button type="button" id=${el.id} class='remove-button'>Remove</button>
+        </div>`,
     );
     const Allbtn = document.querySelectorAll('.remove-button');
     Allbtn.forEach((btn) => {
@@ -53,3 +53,33 @@ formData.addEventListener('submit', (e) => {
   const getAuthor = document.getElementById('author').value;
   booksLibrary.addNewBook(getTitle, getAuthor);
 });
+
+const listLink = document.getElementById('list-link');
+const addLink = document.getElementById('add-link');
+const contactLink = document.getElementById('contact-link');
+const addDisplay = document.querySelector('.ADD');
+const listDisplay = document.querySelector('.LIST');
+const contactDisplay = document.querySelector('.contact');
+
+listLink.addEventListener('click', () => {
+  addDisplay.style.display = 'none';
+  contactDisplay.style.display = 'none';
+  listDisplay.style.display = 'flex';
+});
+
+addLink.addEventListener('click', () => {
+  listDisplay.style.display = 'none';
+  contactDisplay.style.display = 'none';
+  addDisplay.style.display = 'flex';
+});
+
+contactLink.addEventListener('click', () => {
+  listDisplay.style.display = 'none';
+  addDisplay.style.display = 'none';
+  contactDisplay.style.display = 'flex';
+});
+
+window.onload = function () {
+  document.querySelector('.ADD').style.display = 'none';
+  document.querySelector('.contact').style.display = 'none';
+};
