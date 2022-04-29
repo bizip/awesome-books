@@ -6,7 +6,7 @@
 
 # Link to live project
 
-## [Awsome Book](https://bizip.github.io/p-portifolio/)
+## [Awsome Book](https://bizip.github.io/awesome-books/)
 
 ## Built With
 
